@@ -1,0 +1,7 @@
+{
+  "$schema": "https://schemas.tauri.app/capabilities/2.json",
+  "identifier": "default",
+  "description": "Default capability set",
+  "windows": ["main"],
+  "permissions": ["core:default", "opener:default"]
+}

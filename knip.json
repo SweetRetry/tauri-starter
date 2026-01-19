@@ -1,0 +1,37 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    ".": {
+      "entry": [],
+      "project": ["*.{js,ts}"]
+    },
+    "apps/web": {
+      "entry": ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+      "project": ["**/*.{ts,tsx}"],
+      "ignore": [".next/**", "out/**"]
+    },
+    "apps/backend": {
+      "entry": ["src/index.ts"],
+      "project": ["src/**/*.ts"]
+    },
+    "apps/tauri": {
+      "entry": [],
+      "project": [],
+      "ignore": ["src-tauri/**"]
+    },
+    "packages/ui": {
+      "entry": ["src/**/*.{ts,tsx}"],
+      "project": ["src/**/*.{ts,tsx}"]
+    },
+    "packages/api-client": {
+      "entry": ["src/index.ts"],
+      "project": ["src/**/*.ts"]
+    },
+    "packages/typescript-config": {
+      "entry": [],
+      "project": ["*.json"]
+    }
+  },
+  "ignore": ["**/node_modules/**", "**/.next/**", "**/dist/**", "**/out/**", "**/target/**"],
+  "ignoreDependencies": ["@types/*"]
+}
