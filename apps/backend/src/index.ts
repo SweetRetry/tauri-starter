@@ -27,7 +27,7 @@ const app = new Elysia()
       tags: ["General"],
     },
   })
-  .get("/health", () => ({ status: "ok", timestamp: Date.now() }), {
+  .get("/health", () => ({ status: "ok" as const, timestamp: Date.now() }), {
     detail: {
       summary: "Health check",
       description: "Returns the health status and current timestamp",
