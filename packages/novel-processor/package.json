@@ -10,13 +10,11 @@
   },
   "scripts": {
     "test": "bun test",
-    "demo": "bun run src/demo.ts",
+    "demo": "bun run src/demo-interactive.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ai-sdk/deepseek": "^2.0.11",
-    "@ai-sdk/openai": "^3.0.19",
-    "@sweetretry/ai-sdk-volcengine-adapter": "^0.1.5",
     "ai": "^6.0.0",
     "dotenv": "^16.4.7",
     "js-tiktoken": "^1.0.15",

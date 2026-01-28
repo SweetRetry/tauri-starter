@@ -39,3 +39,6 @@ npm-debug.log*
 **/src-tauri/target
 **/src-tauri/bin
 **/src-tauri/gen
+
+
+packages/novel-processor/output

@@ -1,0 +1,32 @@
+[2026-01-28T04:12:10.509Z] [INFO] 📚 小说处理器 - 交互式 Demo (链路优化版)
+[2026-01-28T04:12:10.510Z] [INFO] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-01-28T04:12:10.510Z] [INFO] 每一步您可以选择：继续(Y)、跳过(skip)、退出(q)
+[2026-01-28T04:12:10.510Z] [INFO] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[2026-01-28T04:12:10.519Z] [INFO]    ✅ 字符数: 128,458
+[2026-01-28T04:12:11.034Z] [INFO]    📊 预计切块数: 21
+[2026-01-28T04:12:11.953Z] [INFO]    ✅ 实际切分成 27 块
+[2026-01-28T04:12:18.604Z] [INFO] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-01-28T04:12:18.605Z] [INFO] 🤔 即将执行: 步骤 4/7: LLM 深度分析
+[2026-01-28T04:12:18.605Z] [INFO] 🔍 融合：事件提取 + 动态角色发现 + HAR
+[2026-01-28T04:12:18.606Z] [INFO] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-01-28T04:12:27.022Z] [INFO]    ⏳ 开始 LLM 融合分析（正在提取事件并动态发现角色）...
+[2026-01-28T04:12:27.024Z] [DEBUG] [LLM] 发起结构化请求 (Temp: 0.2)
+[2026-01-28T04:12:27.030Z] [DEBUG] [LLM] 发起结构化请求 (Temp: 0.2)
+[2026-01-28T04:12:27.031Z] [DEBUG] [LLM] 发起结构化请求 (Temp: 0.2)
+[2026-01-28T04:13:27.099Z] [DEBUG] [LLM] 请求完成 (耗时: 60068ms | Tokens: in=0, out=0)
+[2026-01-28T04:13:27.100Z] [DEBUG] [LLM] 发起结构化请求 (Temp: 0.1)
+[2026-01-28T04:13:50.440Z] [DEBUG] [LLM] 请求完成 (耗时: 83408ms | Tokens: in=0, out=0)
+[2026-01-28T04:13:50.441Z] [DEBUG] [LLM] 发起结构化请求 (Temp: 0.1)
+[2026-01-28T04:14:27.300Z] [DEBUG] [LLM] 请求完成 (耗时: 60200ms | Tokens: in=0, out=0)
+[2026-01-28T04:14:30.797Z] [ERROR] Fatal | Error: No output generated.
+[STACK] AI_NoOutputGeneratedError: No output generated.
+    at output (/Users/zhangzimin/Documents/sweetRetry/novel/node_modules/.pnpm/ai@6.0.49_zod@4.3.6/node_modules/ai/dist/index.mjs:4331:13)
+    at structured (/Users/zhangzimin/Documents/sweetRetry/novel/packages/novel-processor/src/libs/llm.ts:85:37)
+    at async extractChunkParallel (/Users/zhangzimin/Documents/sweetRetry/novel/packages/novel-processor/src/modules/analyzer.ts:45:37)
+    at async <anonymous> (/Users/zhangzimin/Documents/sweetRetry/novel/packages/novel-processor/src/modules/analyzer.ts:116:35)
+    at async <anonymous> (/Users/zhangzimin/Documents/sweetRetry/novel/packages/novel-processor/src/modules/analyzer.ts:177:38)
+    at async runInParallel (unknown)
+    at async analyzeChunks (unknown)
+    at async main (unknown)
+    at processTicksAndRejections (native:7:39)
